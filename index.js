@@ -176,8 +176,10 @@ let stocks = [
 function sortByPricing(stocks, sortType) {
   if (sortType === 'low-to-high') {
     let result = stocks.sort((a, b) => a.price - b.price);
+    return result;
   } else if (sortType === 'high-to-low') {
     let result = stocks.sort((a, b) => b.price - a.price);
+    return result;
   } else {
     return 'Invalid SortType!';
   }
@@ -186,8 +188,10 @@ function sortByPricing(stocks, sortType) {
 function sortByGrowth(stocks, sortType) {
   if (sortType === 'low-to-high') {
     let result = stocks.sort((a, b) => a.growth - b.growth);
+    return result;
   } else if (sortType === 'high-to-low') {
     let result = stocks.sort((a, b) => b.growth - a.growth);
+    return result;
   } else {
     return 'Invalid SortType!';
   }
